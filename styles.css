@@ -1,0 +1,551 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: poppins, sans-serif;
+}
+
+/* (START) Font sizes and Design and ICONS*/
+.emphasize {
+  font-size: 8.5rem;
+  font-weight: 600;
+}
+
+h2 {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+  color: #ff9900;
+}
+
+h3 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #ff9900;
+}
+
+p {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  color: #ffffff;
+}
+
+.language,
+.tools {
+  font-size: 2.3rem;
+  margin: 1rem;
+  color: #ff0000;
+  transition: 0.3s;
+}
+
+/* (END) Font sizes and Design and ICONS*/
+
+html {
+  font-size: 62.5%;
+  scroll-padding-top: 100px;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #000000;
+  color: #ffffff;
+  line-height: 1.6;
+  font-size: 1.6rem;
+  height: 100vh;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+section {
+  padding: 100px 9%;
+  min-height: 60vh;
+}
+
+/* Header Section */
+
+header {
+  margin-top: auto;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  padding: 1rem 9%;
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+  border-bottom: #ff9900 3px solid;
+}
+
+.logo {
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: #ff9900;
+  transition: 0.3s;
+  &:hover {
+    transform: scale(1.1);
+    color: #ec0303;
+  }
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+.home-paragraph {
+  margin-top: 20px;
+  font-size: 2rem;
+  color: #ffffff;
+}
+
+/* (START) Navigation Section */
+
+nav {
+  display: flex;
+  align-items: center;
+  gap: 80px;
+}
+
+nav a {
+  font-size: 2.3rem;
+  margin-left: 3rem;
+  font-weight: 600;
+  color: #ffffff;
+  text-transform: uppercase;
+  transition: 0.3s;
+  border-bottom: 3px solid transparent;
+}
+
+nav a:hover {
+  color: #ff9900;
+  border-bottom: 3px solid #ff9900;
+}
+
+nav a.active {
+  color: #ff9900;
+  border-bottom: 3px solid #ff9900;
+}
+
+/* (END) Navigation Section */
+
+.profile-img {
+  margin: 200px auto;
+  align-items: center;
+  border-radius: 50%;
+  position: relative;
+  box-shadow: 0 0 20px #f88400e1;
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+  transition: 0.3s;
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+.highlight {
+  color: #ff9900;
+  font-weight: 700;
+  text-decoration: bold;
+}
+
+/*Home Section*/
+
+.home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+  min-height: 100vh;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #000000;
+  color: #ffffff;
+  border-top: #ff9900 3px solid;
+}
+
+/* About Section */
+.about {
+  display: flex;
+  justify-content: space-between;
+  gap: 80px;
+  padding: 100px 9%;
+  min-height: 60vh;
+}
+
+.about-text {
+  flex: 1;
+  color: white;
+}
+
+.about-text h2 {
+  position: relative;
+  font-size: 3.5rem;
+  color: #ff9900;
+  margin-bottom: 20px;
+}
+
+.about-text h2::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 80px;
+  height: 4px;
+  background: #ff9900;
+  border-radius: 2px;
+}
+
+.about-text p {
+  font-size: 1.9rem;
+  line-height: 1.7;
+  color: #ddd;
+  margin-bottom: 40px;
+}
+
+.skills h3,
+.tools h3 {
+  font-size: 2.5rem;
+  color: #ff9900;
+  margin-bottom: 10px;
+}
+
+.skill-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.skill-card {
+  background: #111;
+  border: 2px solid #ff9900;
+  border-radius: 12px;
+  padding: 10px 20px;
+  font-size: 1.8rem;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.skill-card:hover {
+  background: #ff9900;
+  color: #000;
+  transform: scale(1.05);
+  box-shadow: 0 0 15px #ff9900;
+}
+
+/* (START)Projects Section */
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 100px 9%;
+}
+
+.projects h2 {
+  font-size: 3.5rem;
+  color: #ff9900;
+  margin-bottom: 20px;
+}
+
+.projects p {
+  font-size: 1.8rem;
+  color: #ffffff;
+  margin-bottom: 40px;
+}
+
+.projects a {
+  font-size: 2rem;
+  color: #ff9900;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.projects a:hover {
+  text-decoration: underline;
+}
+
+.project-gif {
+  margin-top: 30px;
+}
+
+.project-gif img {
+  width: 1000px;
+  border: 5px solid #ff9900;
+  border-radius: 10px;
+  box-shadow: 0 0 20px #ff9900;
+  transition: transform 0.3s ease;
+  &:hover {
+    transform: scale(1.05);
+  }
+}
+
+/* (END) Projects Section */
+
+/* (START) Contact Me Section */
+
+.background-decoration-project-and-contact {
+  padding: 100px 9%;
+  background-color: #111;
+  border-radius: 12px;
+  box-shadow: 0 0 20px #ff9900;
+}
+
+.contact {
+  border-radius: 15px;
+  width: 50%;
+  margin: 80px auto;
+  text-align: left;
+  transition: all 0.3s ease;
+  min-height: 30vh;
+}
+
+.contact:hover {
+  box-shadow: 0 0 40px #ff9900;
+  transform: scale(1.02);
+}
+
+.contact h2 {
+  font-size: 3.5rem;
+  color: #ff9900;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.contact p {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.contact ul {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+
+.contact a {
+  color: #ff9900;
+  font-size: 2rem;
+  transition: 0.3s;
+}
+
+.contact a:hover {
+  color: white;
+}
+
+.social-icons {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.social-icons i {
+  font-size: 3rem;
+  transition: 0.3s;
+  color: #ff9900;
+}
+
+.social-icons i:hover {
+  color: #ffffff;
+  transform: scale(1.2);
+}
+
+/* (END) Contact Me Section */
+
+/* Responsive layout */
+
+/* For tablets (max-width: 1024px) */
+@media (max-width: 1024px) {
+  html {
+    font-size: 55%;
+  }
+
+  header {
+    padding: 1.5rem 5%;
+  }
+
+  nav {
+    gap: 40px;
+  }
+
+  .home {
+    flex-direction: column;
+    text-align: center;
+    gap: 40px;
+  }
+
+  .profile-img {
+    width: 300px;
+    height: 300px;
+    margin: 100px auto 0;
+  }
+
+  .about {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .project-gif img {
+    width: 90%;
+  }
+
+  .contact {
+    width: 70%;
+  }
+}
+
+/* For mobile devices (max-width: 768px) */
+@media (max-width: 768px) {
+  html {
+    font-size: 50%;
+  }
+
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem 5%;
+  }
+
+  .logo {
+    font-size: 3rem;
+    margin-bottom: 10px;
+  }
+
+  nav {
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    width: 100%;
+  }
+
+  nav a {
+    font-size: 2rem;
+    margin: 0.5rem;
+  }
+
+  .home {
+    flex-direction: column;
+    gap: 30px;
+    text-align: center;
+    padding-top: 120px;
+  }
+
+  .profile-img {
+    width: 250px;
+    height: 250px;
+  }
+
+  .home-content h1 {
+    font-size: 3rem;
+    line-height: 1.4;
+  }
+
+  .home-paragraph {
+    font-size: 1.8rem;
+  }
+
+  .about {
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+  }
+
+  .about-text h2::after {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .skills,
+  .tools {
+    text-align: center;
+  }
+
+  .skill-list {
+    justify-content: center;
+  }
+
+  .project-gif img {
+    width: 100%;
+  }
+
+  .contact {
+    width: 90%;
+    text-align: center;
+    padding: 30px;
+  }
+
+  .social-icons {
+    gap: 20px;
+  }
+
+  footer {
+    font-size: 1.5rem;
+    padding: 15px;
+  }
+}
+
+/* For very small devices (max-width: 480px) */
+@media (max-width: 480px) {
+  html {
+    font-size: 45%;
+  }
+
+  nav {
+    gap: 10px;
+  }
+
+  .logo {
+    font-size: 2.5rem;
+  }
+
+  .profile-img {
+    width: 200px;
+    height: 200px;
+  }
+
+  .home h1 {
+    font-size: 2.8rem;
+  }
+
+  .about-text p {
+    font-size: 1.6rem;
+  }
+
+  .contact a {
+    font-size: 1.8rem;
+  }
+}
+
+/* Scroll Bar */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: #000;
+  border-left: 2px solid #ff9900;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #ff9900, #ec720f);
+  border-radius: 10px;
+  box-shadow: 0 0 10px #ff9900;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #ffb84d, #ff9900);
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #ff9900 #000;
+}
